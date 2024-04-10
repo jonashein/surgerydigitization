@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="description"
+          content="Creating a Digital Twin of Spinal Surgery: A Proof of Concept.">
+    <meta name="keywords"
+          content="Surgical Digital Twin, Digital Twin, Surgery, 3D Reconstruction, Motion Capture, Digitization, OR-X, Human Pose Estimation, Surgical Instruments, Instrument Tracking, Photogrammetry, 3D Scanning">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Creating a Digital Twin of Spinal Surgery: A Proof of Concept</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="./static/css/bulma.min.css">
+    <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="./static/css/index.css">
+    <link rel="icon" href="https://img.icons8.com/ios/100/surgical-scissors.png">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="./static/js/fontawesome.all.min.js"></script>
+    <script src="./static/js/bulma-carousel.min.js"></script>
+    <script src="./static/js/bulma-slider.min.js"></script>
+    <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<section class="hero">
+    <div class="hero-body">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered">
+                <div class="column has-text-centered">
+                    <h1 class="title is-1 publication-title">Creating a Digital Twin of Spinal Surgery: A Proof of Concept</h1>
+                    <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=Kk_o9AYAAAAJ" target="_blank" rel="noopener noreferrer">Jonas Hein</a><sup>1,2</sup>,</span>
+                        <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=ulEV9OkAAAAJ" target="_blank" rel="noopener noreferrer">Frédéric Giraud</a><sup>1</sup>,</span>
+                        <span class="author-block">
+              <a href="https://orcid.org/0000-0003-1916-5115" target="_blank">Lilian Calvet</a><sup>3</sup>,
+            </span>
+                        <span class="author-block">
+              <a href="https://orcid.org/0009-0002-7205-5257" target="_blank" rel="noopener noreferrer">Alexander Schwarz</a><sup>1</sup>,
+            </span>
+                        <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=n7A302IAAAAJ" target="_blank" rel="noopener noreferrer">Nicola Alessandro Cavalcanti</a><sup>1</sup>,
+            </span>
+                        <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=6JewdrMAAAAJ" target="_blank" rel="noopener noreferrer">Sergey Prokudin</a><sup>2</sup>,
+            </span>
+                        <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=8vBn3bIAAAAJ" target="_blank" rel="noopener noreferrer">Mazda Farshad</a><sup>1</sup>
+            </span>
+                        <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=kzoVUPYAAAAJ" target="_blank" rel="noopener noreferrer">Siyu Tang</a><sup>2</sup>
+            </span>
+                        <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=YYH0BjEAAAAJ" target="_blank" rel="noopener noreferrer">Marc Pollefeys</a><sup>2</sup>
+            </span>
+                        <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=nQ4B3BgAAAAJ" target="_blank" rel="noopener noreferrer">Fabio Carrillo</a><sup>1</sup>
+            </span>
+                        <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=nQ4B3BgAAAAJ" target="_blank" rel="noopener noreferrer">Philipp Fürnstahl</a><sup>1</sup>
+            </span>
+                    </div>
+
+                    <div class="is-size-5 publication-authors">
+                        <span class="author-block"><sup>1</sup>Balgrist University Hospital, University of Zurich, Switzerland,</span>
+
+                        <span class="author-block"><sup>2</sup>ETH Zurich, Switzerland,</span>
+                    </div>
+
+                    <div class="column has-text-centered">
+                        <div class="publication-links">
+                            <!-- PDF Link. -->
+                            <span class="link-block">
+                <a href="https://arxiv.org/pdf/2403.16736"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2403.16736"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+                <span class="link-block">
+                  <a href="https://www.youtube.com/watch?v=LqVaWGgaTMY"
+                     class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                        <i class="fab fa-youtube"></i>
+                    </span>
+                    <span>Video</span>
+                  </a>
+                </span>
+                            <!-- Code Link.
+                            <span class="link-block">
+                              <a href="https://github.com/google/nerfies"
+                                 class="external-link button is-normal is-rounded is-dark">
+                                <span class="icon">
+                                    <i class="fab fa-github"></i>
+                                </span>
+                                <span>Code</span>
+                                </a>
+                            </span>
+                            -->
+                            <!-- Dataset Link.
+                            <span class="link-block">
+                              <a href="https://github.com/google/nerfies/releases/tag/0.1"
+                                 class="external-link button is-normal is-rounded is-dark">
+                                <span class="icon">
+                                    <i class="far fa-images"></i>
+                                </span>
+                                <span>Data</span>
+                                </a>
+                           </span>
+                           -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="hero teaser">
+    <div class="container is-max-desktop is-centered">
+        <div class="hero-body is-centered">
+            <img src="./static/images/teaser_real_crop.jpg" style="width:49%"
+                 alt="Digital photograph of a spinal surgery"/>
+            <img src="./static/images/teaser_synth_eevee_crop.jpg" style="width:49%"
+                 alt="Rendering of its digital twin"/>
+
+            <h2 class="subtitle has-text-centered">
+                <p>A proof-of-concept for surgical digital twins.</p>
+            </h2>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container is-max-desktop">
+        <!-- Abstract. -->
+        <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+                <h2 class="title is-3">Abstract</h2>
+                <div class="content has-text-justified">
+                    Surgery digitalization is the process of creating a virtual replica of real-world surgery, also referred to as a surgical digital twin (SDT).
+                    It has significant applications in various fields such as education and training, surgical planning, and automation of surgical tasks.
+                    Given their detailed representations of surgical procedures, SDTs are an ideal foundation for machine learning methods, enabling automatic generation of training data.
+                    In robotic surgery, SDTs can provide realistic virtual environments in which robots may learn through trial and error.
+
+                    In this paper, we present a proof of concept (PoC) for surgery digitalization that is applied to an ex-vivo spinal surgery performed in realistic conditions.
+                    The proposed digitalization focuses on the acquisition and modelling of the geometry and appearance of the entire surgical scene.
+                    We employ five RGB-D cameras for dynamic 3D reconstruction of the surgeon, a high-end camera for 3D reconstruction of the anatomy, an infrared stereo camera for surgical instrument tracking, and a laser scanner for 3D reconstruction of the operating room and data fusion.
+                    We justify the proposed methodology, discuss the challenges faced and further extensions of our prototype.
+                    While our PoC partially relies on manual data curation, its high quality and great potential motivate the development of automated methods for the creation of SDTs.
+                </div>
+            </div>
+        </div>
+        <!--/ Abstract. -->
+
+        <!-- Dataset -->
+        <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+                <h2 class="title is-3">Assets</h2>
+                <p>The assets will be available here soon.</p>
+            </div>
+        </div>
+        <!--/ Dataset -->
+
+        <!-- Video -->
+        <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+                <h2 class="title is-3">Video</h2>
+                <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/LqVaWGgaTMY?si=_rjobeo7jp_kTBJK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div></div>
+        <!--/ Video -->
+    </div>
+</section>
+
+<section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+        <h2 class="title">BibTeX</h2>
+        <pre><code>@inproceedings{hein2024creating,
+  author={Hein, Jonas and Giraud, Fr\'ed\'eric and Calvet, Lilian and Schwarz, Alexander and Cavalcanti, Nicola Alessandro and Prokudin, Sergey and Farshad, Mazda and Tang, Siyu and Pollefeys, Marc and Carrillo, Fabio, and F\"urnstahl, Philipp},
+  booktitle={2024 IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops (CVPRW)},
+  title={Creating a Digital Twin of Spinal Surgery: A Proof of Concept},
+  year={2024},
+  keywords={Surgical Digital Twin;Digital Twin;Surgery;3D Reconstruction;Motion Capture;Digitization;OR-X;Human Pose Estimation;Surgical Instruments;Instrument Tracking;Photogrammetry;3D Scanning},
+}</code></pre>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="content has-text-centered">
+            <a class="icon-link"
+               href="https://arxiv.org/abs/2403.16736">
+                <i class="fas fa-file-pdf"></i>
+            </a>
+            <a class="icon-link" href="https://github.com/jonashein" class="external-link" disabled>
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
+        <div class="columns is-centered">
+            <div class="column is-8">
+                <div class="content">
+                    <p>
+                        This website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
+                        Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+                    </p>
+                    <p>
+                        Thanks to the authors of <a href="https://nerfies.github.io/">Nerfies</a> for providing this
+                        nice website template!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
