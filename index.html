@@ -53,16 +53,16 @@
               <a href="https://scholar.google.com/citations?user=xSywCzAAAAAJ" target="_blank" rel="noopener noreferrer">Sergey Prokudin</a><sup>2</sup>,
             </span>
                         <span class="author-block">
-              <a href="https://scholar.google.com/citations?user=8vBn3bIAAAAJ" target="_blank" rel="noopener noreferrer">Mazda Farshad</a><sup>1</sup>
+              <a href="https://scholar.google.com/citations?user=8vBn3bIAAAAJ" target="_blank" rel="noopener noreferrer">Mazda Farshad</a><sup>1</sup>,
             </span>
                         <span class="author-block">
-              <a href="https://scholar.google.com/citations?user=BUDh_4wAAAAJ" target="_blank" rel="noopener noreferrer">Siyu Tang</a><sup>2</sup>
+              <a href="https://scholar.google.com/citations?user=BUDh_4wAAAAJ" target="_blank" rel="noopener noreferrer">Siyu Tang</a><sup>2</sup>,
             </span>
                         <span class="author-block">
-              <a href="https://scholar.google.com/citations?user=YYH0BjEAAAAJ" target="_blank" rel="noopener noreferrer">Marc Pollefeys</a><sup>2</sup>
+              <a href="https://scholar.google.com/citations?user=YYH0BjEAAAAJ" target="_blank" rel="noopener noreferrer">Marc Pollefeys</a><sup>2</sup>,
             </span>
                         <span class="author-block">
-              <a href="https://scholar.google.com/citations?user=n7A302IAAAAJ" target="_blank" rel="noopener noreferrer">Fabio Carrillo</a><sup>1</sup>
+              <a href="https://scholar.google.com/citations?user=n7A302IAAAAJ" target="_blank" rel="noopener noreferrer">Fabio Carrillo</a><sup>1</sup>,
             </span>
                         <span class="author-block">
               <a href="https://scholar.google.com/citations?user=nQ4B3BgAAAAJ" target="_blank" rel="noopener noreferrer">Philipp Fürnstahl</a><sup>1</sup>
@@ -76,18 +76,9 @@
 
                     <div class="column has-text-centered">
                         <div class="publication-links">
-                            <!-- PDF Link. -->
-                            <span class="link-block">
-                <a href="https://arxiv.org/pdf/2403.16736"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fas fa-file-pdf"></i>
-                  </span>
-                  <span>Paper</span>
-                </a>
-              </span>
+                <!-- PDF Link. -->
               <span class="link-block">
-                <a href="https://arxiv.org/abs/2403.16736"
+                <a href="https://arxiv.org/abs/2403.16736" target="_blank"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="ai ai-arxiv"></i>
@@ -96,7 +87,25 @@
                 </a>
               </span>
                 <span class="link-block">
-                  <a href="https://www.youtube.com/watch?v=LqVaWGgaTMY"
+                <a href="https://openaccess.thecvf.com/content/CVPR2024W/DCAMI/papers/Hein_Creating_a_Digital_Twin_of_Spinal_Surgery_A_Proof_of_CVPRW_2024_paper.pdf" target="_blank"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+                <span class="link-block">
+                <a href="./static/Hein_Surgery_Digitization_DCIinMI_CVPR2024_Poster.pdf" target="_blank"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Poster</span>
+                </a>
+              </span>
+                <span class="link-block">
+                  <a href="https://www.youtube.com/watch?v=LqVaWGgaTMY" target="_blank"
                      class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                         <i class="fab fa-youtube"></i>
@@ -158,10 +167,9 @@
                 <div class="content has-text-justified">
                     Surgery digitalization is the process of creating a virtual replica of real-world surgery, also referred to as a surgical digital twin (SDT).
                     It has significant applications in various fields such as education and training, surgical planning, and automation of surgical tasks.
-                    Given their detailed representations of surgical procedures, SDTs are an ideal foundation for machine learning methods, enabling automatic generation of training data.
-                    In robotic surgery, SDTs can provide realistic virtual environments in which robots may learn through trial and error.
+                    In addition, SDTs are an ideal foundation for machine learning methods, enabling the automatic generation of training data.
 
-                    In this paper, we present a proof of concept (PoC) for surgery digitalization that is applied to an ex-vivo spinal surgery performed in realistic conditions.
+                    In this paper, we present a proof of concept (PoC) for surgery digitalization that is applied to an ex-vivo spinal surgery.
                     The proposed digitalization focuses on the acquisition and modelling of the geometry and appearance of the entire surgical scene.
                     We employ five RGB-D cameras for dynamic 3D reconstruction of the surgeon, a high-end camera for 3D reconstruction of the anatomy, an infrared stereo camera for surgical instrument tracking, and a laser scanner for 3D reconstruction of the operating room and data fusion.
                     We justify the proposed methodology, discuss the challenges faced and further extensions of our prototype.
@@ -193,24 +201,37 @@
 <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
         <h2 class="title">BibTeX</h2>
-        <pre><code>@inproceedings{hein2024creating,
-  author={Hein, Jonas and Giraud, Fr\'ed\'eric and Calvet, Lilian and Schwarz, Alexander and Cavalcanti, Nicola Alessandro and Prokudin, Sergey and Farshad, Mazda and Tang, Siyu and Pollefeys, Marc and Carrillo, Fabio, and F\"urnstahl, Philipp},
-  booktitle={2024 IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops (CVPRW)},
-  title={Creating a Digital Twin of Spinal Surgery: A Proof of Concept},
-  year={2024},
-  keywords={Surgery Digitization;Surgical Digital Twin;Digital Twin;Surgical Data Science;Surgery;Digitization;3D Reconstruction;Photogrammetry;3D Scanning;Laser Scan;Motion Capture;Pose Estimation;Human Pose Estimation;Surgical Instruments;Instrument Tracking;Pose Estimation;OR-X},
-}</code></pre>
+        <pre><code>@InProceedings{Hein_2024_CVPR,
+    author    = {Hein, Jonas and Giraud, Fr\'ed\'eric and Calvet, Lilian and Schwarz, Alexander and Cavalcanti, Nicola Alessandro and Prokudin, Sergey and Farshad, Mazda and Tang, Siyu and Pollefeys, Marc and Carrillo, Fabio and F\"urnstahl, Philipp},
+    title     = {Creating a Digital Twin of Spinal Surgery: A Proof of Concept},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops},
+    month     = {June},
+    year      = {2024},
+    pages     = {2355-2364},
+    keywords={Surgery Digitization;Surgical Digital Twin;Digital Twin;Surgical Data Science;Surgery;Digitization;3D Reconstruction;Photogrammetry;3D Scanning;Laser Scan;Motion Capture;Pose Estimation;Human Pose Estimation;Surgical Instruments;Instrument Tracking;Pose Estimation;OR-X},
+    }</code></pre>
+    </div>
+</section>
+
+<section class="section" id="Acknowledgements">
+    <div class="container is-max-desktop content">
+        <h2 class="title">Acknowledgements</h2>
+        This work has been supported by the <a href="https://or-x.ch/" target="_blank" rel="noopener noreferrer">OR-X</a> - a swiss national research infrastructure for translational surgery - and associated funding by the University of Zurich and University Hospital Balgrist, as well as by the InnoSuisse <a href="https://www.surgicalproficiency.ch/" target="_blank" rel="noopener noreferrer">PROFICIENCY</a> grant.
     </div>
 </section>
 
 <footer class="footer">
     <div class="container">
         <div class="content has-text-centered">
-            <a class="icon-link"
+            <a class="icon-link" target="_blank"
                href="https://arxiv.org/abs/2403.16736">
                 <i class="fas fa-file-pdf"></i>
             </a>
-            <a class="icon-link" href="https://github.com/jonashein" class="external-link" disabled>
+            <a class="icon-link" target="_blank"
+               href="https://openaccess.thecvf.com/content/CVPR2024W/DCAMI/html/Hein_Creating_a_Digital_Twin_of_Spinal_Surgery_A_Proof_of_CVPRW_2024_paper.html">
+                <i class="ai ai-arxiv"></i>
+            </a>
+            <a class="icon-link" target="_blank" href="https://github.com/jonashein" class="external-link" disabled>
                 <i class="fab fa-github"></i>
             </a>
         </div>
@@ -218,11 +239,11 @@
             <div class="column is-8">
                 <div class="content">
                     <p>
-                        This website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
+                        This website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">
                         Creative Commons Attribution-ShareAlike 4.0 International License</a>.
                     </p>
                     <p>
-                        Thanks to the authors of <a href="https://nerfies.github.io/">Nerfies</a> for providing this
+                        Thanks to the authors of <a href="https://nerfies.github.io/" target="_blank">Nerfies</a> for providing this
                         nice website template!
                     </p>
                 </div>
